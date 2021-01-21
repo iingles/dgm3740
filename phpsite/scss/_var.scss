@@ -1,0 +1,23 @@
+// Colors
+$primaryBlue: #72B3E2;
+$secondaryBlue: #4054A5;
+$accentBlue: #d0e3f0;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@300;400&display=swap');
+$headingFont: 'Roboto', sans-serif;
+$bodyFont: 'Roboto Slab', serif;
+
+// Breakpoints (based on Bootstrap breakpoints)
+
+// Extra small devices (portrait phones, less than 576px)
+$xs: 576px;
+
+// Small devices (landscape phones, less than 768px)
+$sm: 768px;
+
+// Medium devices (tablets, less than 992px)
+$md: 992px;
+
+// Large devices (desktops, less than 1200px)
+$lg: 1200px;

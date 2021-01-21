@@ -1,0 +1,57 @@
+.cruise-info {
+    margin: 4rem 0;
+
+    @media screen and (max-width: $sm) {
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: $sm) {
+        flex-direction: row;
+    }
+
+    .col {        
+
+        &.description {
+            flex-direction: column;
+            justify-content: center;
+
+            h2 {
+                color: $secondaryBlue;
+                margin: 1rem 0;
+            }
+
+            p {
+                margin: 1.5rem 0;
+            }
+
+            button {
+                align-self: flex-end;                
+            }
+
+            @media screen and (max-width: $sm) {
+                padding: 0 3rem;
+            }
+        }
+
+        @media screen and (max-width: $sm) {
+
+            &.cruise-photo {
+                display: flex;
+                justify-content: center;
+
+                margin: 2rem 0;
+                                
+                img {
+                    max-width: 350px;
+                }
+            }
+        }
+
+        @media screen and (min-width: $sm) {
+            &.cruise-photo {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+}

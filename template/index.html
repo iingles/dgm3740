@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+    
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+</head>
+    <body>
+        <header class="main-header">
+            <div class="container">
+                <figure class="logo">
+                    <img
+                    class="main-logo"
+                    src="img/logo3x.png"
+                    srcset="
+                    img/logo/logo1x.png 1x,
+                    img/logo/logo2x.png 2x,
+                    img/logo/logo3x.png 3x"
+                    alt="Logo for Cabot Cruises"
+                    />
+                </figure> 
+                <h1 class="header-phone"><a href="tel:1-800-555-1234">1-800-555-1234</a></h1>
+            </div>
+        </header>
+
+        <nav class="main-nav" >
+            <div class="container">
+                <button id="mobileMenu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="main-menu" id="topNav">
+                    <li class="top-link"><a href="#">home</a></li>
+                    <li class="top-link"><a href="#">cruises</a></li>
+                    <li class="top-link">
+                        <a href="#">agents</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">link 1</a></li>
+                            <li><a href="#">link 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-link"><a href="#">book</a></li>
+                </ul>
+                <div class="main-search">
+                    <form id="searchForm">
+                        <input type="search" placeholder="search.." name="mainSearch">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+
+                <section class="carousel">
+                    <picture>
+                        <source srcset="./img/content/slides/large/slide1-1200x350.jpg" media="(min-width: 680px)" />
+                        <img src="./img/content/slides/small/slide1-350x350.jpg" srcset="./img/content/slides/small/slide1-350x350.jpg" alt="slider image one" />
+                    </picture>
+
+                    <picture>
+                        <source srcset="./img/content/slides/large/slide2-1200x350.jpg" media="(min-width: 680px)" />
+                        <img src="./img/content/slides/small/slide2-350x350.jpg" srcset="./img/content/slides/small/slide2-350x350.jpg" alt="slider image two" />
+                    </picture>
+
+                    <picture>
+                        <source srcset="./img/content/slides/large/slide3-1200x350.jpg" media="(min-width: 680px)" />
+                        <img src="./img/content/slides/small/slide3-350x350.jpg" srcset="./img/content/slides/small/slide3-350x350.jpg" alt="slider image three" />
+                    </picture>
+
+                    <picture>
+                        <source srcset="./img/content/slides/large/slide4-1200x350.jpg" media="(min-width: 680px)" />
+                        <img src="./img/content/slides/small/slide4-350x350.jpg" srcset="./img/content/slides/small/slide4-350x350.jpg" alt="slider image four" />
+                    </picture> 
+                </section>
+
+                <header class="section-header">
+                    <h2>Recent Articles</h2>
+                </header>
+                
+                <section class="article-list">
+                    
+                    <a href="#" class="art-1">
+                        <article>
+                            <img src="./img/content/blog/chairs-beach-400x400.jpg" alt="article image one"/>
+                            <header class="article-title">
+                                Article Title Goes Here and may wrap
+                                to two lines.
+                            </header>
+                            <footer class="article-footer">
+                                May 1, 2018
+                            </footer>
+                        </article>
+                    </a>
+
+                    <a href="#" class="art-2">
+                        <article>
+                            <img src="./img/content/blog/chairs-umbrella-400x400.jpg" alt="article image two"/>
+                            <header class="article-title">
+                                Article Title Goes Here and may wrap
+                                to two lines.
+                            </header>
+                            <footer class="article-footer">
+                                May 1, 2018
+                            </footer>
+                        </article>
+                    </a>
+
+                    <a href="#" class="art-3">
+                        <article>
+                            <img src="./img/content/blog/overhead-beach-400x400.jpg" alt="article image three"/>
+                            <header class="article-title">
+                                Article Title Goes Here and may wrap
+                                to two lines.
+                            </header>
+                            <footer class="article-footer">
+                                May 1, 2018
+                            </footer>
+                        </article>
+                    </a>
+
+                    <a href="#" class="art-4">
+                        <article>
+                            <img src="./img/content/blog/ship-400x400.jpg" alt="article image four"/>
+                            <header class="article-title">
+                                Article Title Goes Here and may wrap
+                                to two lines.
+                            </header>
+                            <footer class="article-footer">
+                                May 1, 2018
+                            </footer>
+                        </article>
+                    </a>
+                    
+ 
+                </section>    
+                
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            
+            <section class="contact-info">
+                <div class="container">
+                    <div class="col">
+                        <h2>Contact Us</h2>
+                        <p>
+                            <a 
+                            href="https://www.google.com/maps/place/277+E+100+N,+Bountiful,+UT+84010/@40.8905979,-111.8765838,17z/data=!3m1!4b1!4m5!3m4!1s0x8752f7f6094373f7:0x4811cbde1ae32384!8m2!3d40.8905979!4d-111.8743951"
+                            target="_blank">
+                                CABOT CRUIZES <br />
+                                277 E. 100 N. <br />
+                                Bountiful, UT 84010
+                            </a>                            
+                        </p>
+                        <h2>Phone:</h2>
+                        <p><a href="tel:18005551234">1-800-555-1234</a></p>
+                        
+                        <h2>Hours of Operation:</h2>
+                        <p>Monday-Friday 9am-4pm</p>
+                    </div>
+                    <div class="col">
+                        <h2>Newsletter</h2>
+                        <p>
+                            Subscribe to our email list and stay up-to-date with our
+                            hottest offers and latest specials!
+                        </p>
+                        <form class="newsletter-signup">
+                            <input type="text">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <h2>Why Cabot Cruises</h2>
+                        <p>
+                            Cabot Cruises is a travel agency providing the best cruise
+                            deals on our online travel website. We can help you with all
+                            inclusive vacaMons including discounted cruises.
+                        </p>
+                        <p>
+                            We do not sell travel to residents of Delaware, Iowa,
+                            Florida, Hawaii and Washington state because those states
+                            are just wierd. If you are a resident of one of these states,
+                            call your congressman and tell them to change the
+                            regulations.
+                        </p>
+                    </div>
+                </div>
+            </section>
+          
+
+            <div class="footer-top">
+                <div class="social-links container">
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-youtube-square"></i></a>
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                    <a href=""><i class="fab fa-pinterest-square"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    &copy; 2021 Isaac Ingles |&nbsp; <a href="https://isaacingles.com">isaacingles.com</a>
+                </div>                    
+            </div>
+        
+        </footer>   
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script type="text/javascript" src="./js/scripts.js"></script>
+
+        <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "TravelAgency",
+              "name": "Cabot Cruises",
+              "description": "Cabot Cruises is a travel agency providing the best cruise deals on our online travel website.",
+              "openingHours": "Mo-Fr 09:00-16:00",
+              "telephone": "+13855551234",
+              "faxNumber": "+1385559876",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1 Washington Ave",
+                "addressLocality": "Miami Beach",
+                "addressRegion": "FL"
+              },
+              "image": "http://fullpath.com/logo.png",
+              "priceRange": "$500 to $4000"
+            }
+        </script>
+    </body>
+</html>

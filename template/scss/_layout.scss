@@ -1,0 +1,31 @@
+// General layout styles
+
+main {
+    margin-bottom: 5rem;
+
+    .section-header {
+        margin: 2rem 0;
+    }
+}
+
+// General container element
+.container {
+
+    margin: 0 auto;
+
+    @media screen and (min-width: $xs) {
+        max-width: $xs; 
+    }
+
+    @media screen and (min-width: $sm) {
+        max-width: $sm;
+    }
+
+    @media screen and (min-width: $md) {
+        max-width: $md;
+    }
+
+    @media screen and (min-width: $lg) {
+        max-width: $lg;
+    }
+}
