@@ -25,7 +25,8 @@
             }
 
             button {
-                align-self: flex-end;                
+                align-self: flex-end;   
+                border-radius: 2rem;             
             }
 
             @media screen and (max-width: $sm) {

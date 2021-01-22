@@ -67,9 +67,8 @@ button {
   justify-content: center;
   min-width: 64px;
   height: 4rem;
-  padding: 2rem;
+  padding: 2.4rem 1rem;
   border: none;
-  border-radius: 2rem;
   font-size: 1.6rem;
   color: #fff;
   cursor: pointer;
@@ -219,12 +218,8 @@ button.block {
   display: flex;
   flex-direction: row;
 }
-.main-nav #searchForm input[type=search] {
-  border: none;
-  padding: 1rem;
-}
 .main-nav #searchForm button[type=submit] {
-  padding: 6px 10px;
+  padding: 2.4rem 1rem;
   background: #D0E3F0;
   font-size: 17px;
   border: none;
@@ -368,6 +363,11 @@ main .section-header {
   }
 }
 
+input, select {
+  border: none;
+  padding: 1.6rem;
+}
+
 .carousel .slick-dots li button:before {
   font-size: 4rem;
 }
@@ -476,6 +476,7 @@ main .section-header {
 }
 .cruise-info .col.description button {
   align-self: flex-end;
+  border-radius: 2rem;
 }
 @media screen and (max-width: 768px) {
   .cruise-info .col.description {
@@ -520,6 +521,11 @@ main .section-header {
     float: right;
   }
 }
+@media screen and (max-width: 576px) {
+  .agent .container .agent-image {
+    align-self: center;
+  }
+}
 .agent .container .agent-description h2 {
   margin-top: 2rem;
   color: #4054A5;
@@ -536,6 +542,23 @@ main .section-header {
   display: block;
   font-weight: 600;
   color: #4054A5;
+}
+
+.booking-page #bookingForm {
+  display: flex;
+  flex-direction: column;
+}
+.booking-page #bookingForm input, .booking-page #bookingForm select {
+  border: 1px solid #ccc;
+  margin-bottom: 2rem;
+}
+.booking-page #bookingForm button {
+  border-radius: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .booking-page #bookingForm {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

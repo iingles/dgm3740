@@ -21,9 +21,14 @@
 
         .agent-image {
             border-radius: 50%;
+            
     
             @media screen and (min-width: $xs) {
                 float: right;
+            }
+
+            @media screen and (max-width: $xs) {
+                align-self: center;
             }
             
         }
