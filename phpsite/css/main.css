@@ -544,13 +544,25 @@ input, select {
   color: #4054A5;
 }
 
+.booking-page {
+  padding: 4rem 0;
+}
 .booking-page #bookingForm {
   display: flex;
   flex-direction: column;
 }
+.booking-page #bookingForm label {
+  font-size: 1.4rem;
+}
 .booking-page #bookingForm input, .booking-page #bookingForm select {
+  display: block;
+  width: 100%;
   border: 1px solid #ccc;
   margin-bottom: 2rem;
+}
+.booking-page #bookingForm .form-required {
+  color: #b65a5a;
+  font-size: 1.2rem;
 }
 .booking-page #bookingForm button {
   border-radius: 2rem;
@@ -558,6 +570,11 @@ input, select {
 @media screen and (min-width: 992px) {
   .booking-page #bookingForm {
     width: 25%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .booking-page {
+    padding: 4rem 2rem;
   }
 }
 

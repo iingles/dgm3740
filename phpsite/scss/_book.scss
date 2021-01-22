@@ -1,11 +1,25 @@
 .booking-page {
+    padding: 4rem 0;
+
+
     #bookingForm {
         display: flex;
         flex-direction: column;
 
+        label {
+           font-size: 1.4rem;
+        }
+
         input, select {
+            display: block;
+            width: 100%;
             border: 1px solid #ccc;
             margin-bottom: 2rem;
+        }
+
+        .form-required {
+            color: rgb(182, 90, 90);
+            font-size: 1.2rem;
         }
 
         button {
@@ -15,6 +29,10 @@
         @media screen and (min-width: $md) {
             width: 25%;
         }
+    }
+
+    @media screen and (max-width: $md) {
+        padding: 4rem 2rem;
     }
     
 }
