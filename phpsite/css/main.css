@@ -137,6 +137,9 @@ button.block {
   flex-direction: row;
   list-style-type: none;
 }
+.main-nav .main-menu .active a {
+  color: #4054A5 !important;
+}
 .main-nav .main-menu .top-link {
   display: flex;
   align-items: center;
@@ -493,6 +496,46 @@ main .section-header {
   .cruise-info .col.cruise-photo {
     margin-right: 2rem;
   }
+}
+
+@media screen and (max-width: 576px) {
+  .agent .container {
+    display: flex;
+    padding: 0 2rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .agent .container .section-title {
+    text-align: center;
+  }
+}
+.agent .container .section-title {
+  margin: 2rem 0;
+}
+.agent .container .agent-image {
+  border-radius: 50%;
+}
+@media screen and (min-width: 576px) {
+  .agent .container .agent-image {
+    float: right;
+  }
+}
+.agent .container .agent-description h2 {
+  margin-top: 2rem;
+  color: #4054A5;
+}
+.agent .container .agent-description .agent-phone {
+  color: inherit;
+  text-decoration: none;
+}
+.agent .container .agent-description blockquote {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.agent .container .agent-description blockquote .customer-name {
+  display: block;
+  font-weight: 600;
+  color: #4054A5;
 }
 
 /*# sourceMappingURL=main.css.map */

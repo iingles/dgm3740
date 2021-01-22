@@ -43,6 +43,12 @@
         flex-direction: row;
         list-style-type: none;
 
+        .active {
+            a {
+                color: $secondaryBlue!important;
+            }
+        }
+
         .top-link {
             display: flex;
             align-items: center;

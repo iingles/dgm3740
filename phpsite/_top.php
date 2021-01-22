@@ -45,7 +45,7 @@
                             <li><a href="/agent-2.php">Agent 2</a></li>
                         </ul>
                     </li>
-                    <li class="top-link"><a href="/book">book</a></li>
+                    <li class="top-link"><a href="/book.php">book</a></li>
                 </ul>
                 <div class="main-search">
                     <form id="searchForm">
