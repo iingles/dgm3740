@@ -1,0 +1,96 @@
+.carousel {
+    .slick-dots li button:before {
+        font-size: 4rem;
+    }
+
+    @media screen and (max-width: $sm) {
+        .slick-slide {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.article-list {
+    display: grid;
+    grid-template-rows: auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+
+    grid-template-areas: 
+        "art-1 art-2" 
+        "art-3 art-4";
+
+    @media (min-width: $sm) and (max-width: $md){
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+        "art-1 art-2 art-3" 
+        "art-4 null null";
+    }
+
+    @media (min-width: $md) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;	    
+        grid-template-areas: "art-1 art-2 art-3 art-4";
+        grid-row-gap: 0;
+    }
+
+    
+    @for $i from 1 through 4 {
+        .art-#{$i} {
+            grid-area: art-#{$i};
+        }
+    }
+    
+
+    a {
+        display: block;
+        width: auto;
+        box-shadow: 0 0 26px rgba(0,0,0,.1);
+
+        text-decoration: none; 
+
+        article {
+            position: relative;
+
+            img {
+                display: block;
+                width: 100%;
+                opacity: 75%;
+                margin: 0;
+                transition: opacity 0.2s ease-in;
+
+                &:hover {                    
+                    opacity: 100%;
+                }
+            }
+
+            .article-title {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                flex: 1;
+                background-color: rgba(114,179,226,0.8);
+                padding: 1rem;
+                text-align: center;
+                color: #fff;     
+                
+                @media screen and (max-width: $sm) {
+                    font-size: 1.2rem;
+                }
+            }
+            
+            .article-footer {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                color: #fff;
+                padding: 1rem;
+                background: rgba(64,84,165, 0.8);;
+            }
+    
+        }
+    }   
+
+}

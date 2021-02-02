@@ -1,0 +1,61 @@
+.agent {
+    .container {
+
+
+        @media screen and (max-width: $xs) {
+            display: flex;
+            padding: 0 2rem;
+            justify-content: center;
+            flex-direction: column;
+
+            .section-title {
+                text-align: center;
+            }
+
+           
+        }
+
+        .section-title {
+            margin: 2rem 0;
+        }
+
+        .agent-image {
+            border-radius: 50%;
+            
+    
+            @media screen and (min-width: $xs) {
+                float: right;
+            }
+
+            @media screen and (max-width: $xs) {
+                align-self: center;
+            }
+            
+        }
+    
+        .agent-description {
+            h2 {
+                margin-top: 2rem;
+                color: $secondaryBlue;
+            }
+    
+            .agent-phone {
+                color: inherit;
+                text-decoration: none;
+            }
+        
+            blockquote {
+                margin-bottom: 1rem;
+                font-style: italic;
+    
+                .customer-name {
+                    display: block;
+                    font-weight: 600;
+                    color: $secondaryBlue;                
+                }
+            }
+    
+        }
+    }
+    
+}

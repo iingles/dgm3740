@@ -1,0 +1,25 @@
+.main-header {
+    background-color: #f1f1f1;
+
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-phone {
+        align-self:flex-end;
+
+        @media screen and (max-width: $sm) {
+            display: none;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;            
+        }    
+    }
+
+}
+
