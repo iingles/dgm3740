@@ -1,0 +1,40 @@
+@mixin breakpoint($point) {
+    
+    // breakpoint(medium), breakpoint(large)...
+    @each $key, $value in $breakpoints {
+        @if $point == $key and not ($value == 0) {
+            @media only screen and (min-width: #{$value}) { @content; }
+        }
+    }
+
+    // breakpoint(small only), breakpoint(medium only), breakpoint(large only)...
+    $i: 1;
+    @each $key, $value in $breakpoints {
+
+        $bp-only: $key only;
+        $bp-keys: map-keys($breakpoints);
+        $bp-values: map-values($breakpoints);
+
+        @if $point == $bp-only and $value == 0 {
+            @media only screen and (max-width: #{nth($bp-values, $i + 1)}) { @content; }
+        }
+        @if $point == $bp-only and not ($value == 0) and not ($key == nth($bp-keys, -1)) {
+            @media only screen and (min-width: #{$value}) and (max-width: #{nth($bp-values, $i)}) { @content; }
+        }
+        @if $point == $bp-only and $key == nth($bp-keys, -1) {
+            @media only screen and (min-width: #{$value}) { @content; }
+        }
+
+        $i: $i + 1;
+    }
+
+    // breakpoint(medium down), breakpoint(large down)...
+    @each $key, $value in $breakpoints {
+        $bp-down: $key down;
+        @if $point == $bp-down and not ($value == 0) {
+            @media only screen and (max-width: #{$value}) { @content; }
+        }
+    }
+
+
+}

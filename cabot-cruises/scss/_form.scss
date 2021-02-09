@@ -1,4 +1,13 @@
-input, select {
-    border: none;
+input[type="text"], input[type="email"], select {
+    border: 1px solid #ccc;
     padding: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+
+    @media screen and (min-width: $lg) {
+        width: 50%;
+    }
 }

@@ -33,3 +33,44 @@ main {
         max-width: $lg;
     }
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    $grid-columns: 12;
+
+    @each $key, $value in $breakpoints {
+        @if $value == 0 {
+            @for $i from 1 through $grid-columns {
+                .col-#{$key}-#{$i} { 
+                    width: (100% / $grid-columns) * $i; 
+                };
+            }
+        } @else if $value != 0 {
+            @include breakpoint(#{$key}) {
+                @for $i from 1 through $grid-columns {
+                    .col-#{$key}-#{$i} { 
+                        width: (100% / $grid-columns) * $i; 
+                    };
+                };
+            };
+        }
+    }
+
+}
+
+.grid-row {
+    display: grid;
+    grid-template-rows: auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+
+  
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            grid-area: col-#{$i};
+        }
+    }
+}

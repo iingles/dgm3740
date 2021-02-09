@@ -1,5 +1,6 @@
 @import "./var";
 @import "./global";
+@import "./mixins";
 
 @import "./header";
 @import "./nav";
@@ -10,4 +11,7 @@
 @import "./homepage";
 @import "./cruises";
 @import "./agent";
-@import "_book";
+@import "./book";
+@import "./about";
+@import "./destinations";
+@import "./location";

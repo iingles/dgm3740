@@ -1,0 +1,52 @@
+.destinations {
+    justify-content: center;
+    align-items: center;
+
+    .grid-row {
+        display: grid;
+        grid-template-rows: auto;
+        grid-column-gap: 1rem;
+        grid-row-gap: 2rem;
+    
+        @media (max-width: $sm) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "col-1 col-2"
+            "col-3 col-4"
+            "col-5 col-6"
+            "col-7 col-8"
+            "col-9 col-10";
+            
+
+        }
+    
+        @media (min-width: $sm) and (max-width: $lg) {
+            grid-template-columns: 1fr 1fr 1fr;	    
+            grid-template-areas: 
+            "col-1 col-2 col-3"
+            "col-4 col-5 col-6"
+            "col-7 col-8 col-9"
+            "col-10 null null"; 
+
+
+        }
+    
+        @media (min-width: $lg) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;	    
+            grid-template-areas: 
+            "col-1 col-2 col-3 col-4"
+            "col-5 col-6 col-7 col-8"
+            "col-9 col-10 null null";
+
+        }
+        
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+    }
+
+}

@@ -1,0 +1,29 @@
+.location {
+    .page-title {
+        padding: 0 0 0 3rem;
+    }
+
+    .col {
+        margin: 0 0 3rem 0;
+        padding: 0 0 3rem 3rem;
+
+        h2 {
+            margin: 2rem 0;
+        }
+    }
+
+    .map {
+        overflow:hidden;    
+        padding-bottom:56.25%;    
+        position:relative;
+        height:0;    
+    }
+    
+    .map iframe{
+        left:0;    
+        top:0;    
+        height:100%;    
+        width:100%;    
+        position:absolute;    
+    }
+}
