@@ -2,6 +2,7 @@
 
 main {
     margin-bottom: 5rem;
+    padding: 0 1rem;
 
     .section-header {
         margin: 4rem 0;
@@ -18,19 +19,23 @@ main {
     margin: 0 auto;
 
     @media screen and (min-width: $xs) {
-        max-width: $xs; 
+        max-width: 375px; 
     }
 
-    @media screen and (min-width: $sm) {
-        max-width: $sm;
+    @media screen and (max-width: $sm) {
+        max-width: 570px;
     }
 
-    @media screen and (min-width: $md) {
-        max-width: $md;
+    @media screen and (max-width: $md) {
+        max-width: 725px;
+    }
+
+    @media screen and (max-width: $lg) {
+        max-width: 952px;
     }
 
     @media screen and (min-width: $lg) {
-        max-width: $lg;
+        max-width: 1200px;
     }
 }
 
